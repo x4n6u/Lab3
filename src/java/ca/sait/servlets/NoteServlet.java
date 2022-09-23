@@ -37,6 +37,9 @@ public class NoteServlet extends HttpServlet {
         
         request.setAttribute("note", note);
         
+        request.setAttribute("title", note.getTitle());
+        request.setAttribute("contents", note.getContents());
+        
         String edit = request.getParameter("edit");
         if(edit != null)
         {

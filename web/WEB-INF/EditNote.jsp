@@ -18,12 +18,12 @@
         <form action="note" method="POST">
             <p>
                 <label for="title">Title:</label>
-                <input type="text" id="title" name="title">
+                <input type="text" id="title" name="title" value="<%=request.getAttribute("title") %>">
             </p>
             
              <p>
                 <label for="contents">Contents:</label>
-                <textarea id="contents" name="contents"></textarea>
+                <textarea id="contents" name="contents"><%=request.getAttribute("contents") %></textarea>
             </p>
            
             <button type="submit">Save</button>
